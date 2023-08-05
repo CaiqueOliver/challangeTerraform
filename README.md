@@ -2,7 +2,7 @@
 
 ## 1. Iniciando o Terraform
 
-terraform init
+- erraform init
 
 ## 2. Validando configurações
 
@@ -11,4 +11,4 @@ terraform init
 
 ## 3. Aplicando recursos via terraform
 
-terraform apply
+- terraform apply
