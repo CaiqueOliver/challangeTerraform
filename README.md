@@ -6,7 +6,7 @@ terraform init
 
 ## 2. Validando configurações
 
-terraform plan\n
+terraform plan
 terraform validate
 
 ## 3. Aplicando recursos via terraform
