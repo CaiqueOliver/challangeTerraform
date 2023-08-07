@@ -7,7 +7,7 @@ variable "provider_config" {
 }
 
 variable "app_name" {
-  type = string
+  type    = string
   default = "caique-oliveira-da-silva"
 }
 
@@ -17,29 +17,29 @@ variable "location" {
 }
 
 variable "storage_account" {
+  type = map(any)
   default = {
-    config = {
-      account_tier        = "Standard"
-      account_replication = "LRS"
-      account_kind        = "FileStorage"
-    }
+    account_tier        = "Standard"
+    account_replication = "LRS"
+    account_kind        = "FileStorage"
   }
 }
+
 
 variable "container_registry" {
+  type = map(any)
   default = {
-    config = {
-      sku           = "Standard"
-      admin_enabled = false
-    }
+    sku           = "Standard"
+    admin_enabled = false
   }
 }
 
+
 variable "app_service_config" {
+  type = map(any)
   default = {
-    config = {
-      os_type  = "Linux"
-      sku_name = "F1"
-    }
+    os_type  = "Linux"
+    sku_name = "F1"
   }
 }
+
